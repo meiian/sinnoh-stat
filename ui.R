@@ -80,11 +80,12 @@ navbarPage("Sinnoh et ses Pokémon",
            tabPanel("Pokemon",
                     sidebarLayout(
                       sidebarPanel(
-                        selectizeInput('zcol', 'Pokemon', choices= pokemon.data["name"],
+                        selectizeInput(inputId='pokemonInput', label='Pokemon :', choices= pokemon.data["name"],
                                        options = list(
                                          valueField = "name",
                                          labelField = "name",
                                          searchField = "name",
+                                         optgroups = "name",
                                          options = list(),
                                          create = FALSE,
                                          render = I(
