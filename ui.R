@@ -86,6 +86,7 @@ navbarPage("Sinnoh et ses Pokémon",
                                          labelField = "name",
                                          searchField = "name",
                                          optgroups = "name",
+                                         selected = "Turtwig",
                                          options = list(),
                                          create = FALSE,
                                          render = I(
@@ -99,6 +100,7 @@ navbarPage("Sinnoh et ses Pokémon",
                                        ),
                       ),
                       mainPanel(
+                        plotOutput(outputId = "radar"),
                       )
                     )
            )
